@@ -6,6 +6,7 @@ let button = document.getElementById('press');
 
 var arr = ["images/bau.jpg","images/ca.jpg","/images/cua.jpg","/images/ga.jpg","/images/nai.jpg","/images/tom.jpg"];
 
+//Generate random picture
 function fortuneSelector() {
     let randomNum1 = Math.floor(Math.random()*arr.length);
     let randomNum2 = Math.floor(Math.random()*arr.length);
@@ -14,6 +15,7 @@ function fortuneSelector() {
     sqr2.setAttribute("src", arr[randomNum2]);
     sqr3.setAttribute("src", arr[randomNum3]);
 }
+
 let changeText;
 function generateRandom() {
     changeText = setInterval(fortuneSelector, 10);
